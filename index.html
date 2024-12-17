@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Don Kolony" />
+    <meta name="description" content="The official Portfolio of Don Kolony" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="icon" href="./assets/icons/portfolio_icon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <script>
+      const toggleClass = () => {
+        console.log("Hello");
+        const nav__mobile = document.getElementById("nav__mobile");
+        const nav__active = nav__mobile.getElementsByClassName("nav__active");
+        if (nav__active.length > 0) {
+          nav__mobile.classList.remove("nav__active");
+        } else {
+          nav__mobile.classList.add("nav__active");
+        }
+        // if (nav__mobile) {
+        //   // nav__mobile.classList.add("active");
+        //   nav__mobile.style.backgroundColor = "orange";
+        // }
+        console.log(nav__mobile);
+      };
+    </script> -->
+  </head>
+
+  <body>
+    <header class="header__navbar">
+      <a href="#home" id="navbar__logo">D.K.</a>
+      <!-- Hamburger menu icon -->
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar top-line"> </span>
+        <span class="bar mid-line" style="visibility: hidden"></span>
+        <span class="bar bot-line"></span>
+      </div>
+      <!-- NAVBAR FOR LARGE SCREENS-->
+      <nav class="navbar__container">
+        <ul class="navbar__menu">
+          <li class="navbar__items">
+            <a href="#home" class="navbar__links">Home</a>
+          </li>
+
+          <li class="navbar__items">
+            <a href="#skills" class="navbar__links">Skills</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#portfolio" class="navbar__links">Portfolio</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#about" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__items">
+            <a href="#contact" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NAVBAR FOR MOBILE ONLY -->
+      <nav class="navbar__mobile__container">
+        <ul class="navbar__mobile__menu" id="nav__mobile">
+          <li class="navbar__mobile__items">
+            <a href="#home" class="navbar__mobile__links">Home</a>
+          </li>
+
+          <li class="navbar__mobile__items">
+            <a href="#skills" class="navbar__mobile__links">Skills</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#portfolio" class="navbar__mobile__links">Portfolio</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#about" class="navbar__mobile__links">About</a>
+          </li>
+          <li class="navbar__mobile__items">
+            <a href="#contact" class="navbar__mobile__links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero__image__container">
+        <div class="img__me">
+          <img
+            src="./assets/image/prodile_icon.jpg"
+            alt="Portrait of Dieudonné Kolony, a Digital Designer with 10 years of experience, smiling confidently against a dark background."
+            width="731"
+            height="731"
+          />
+        </div>
+      </div>
+      <div class="hero__description__container">
+        <div class="description__top">
+          <h1>
+            <!-- I'm a Digital Producer Crafting Framer Tools for Designers,
+            Creatives, and Makers -->
+            I’m a Digital Creator Building Responsive Websites That People Love!
+          </h1>
+        </div>
+        <div class="description__bot">
+          <p>
+            <!-- I'm focused on building digital experiences for people who cannot
+            live without creativity  -->
+            I’m focused on crafting responsive websites that delight and engage
+            user
+          </p>
+        </div>
+      </div>
+      <div class="hero__btn__container">
+        <button class="btn__resume hero-btn">
+          <a href="./assets/resume/resume_dieudonne_kolony.pdf" download>
+            Download CV
+          </a>
+        </button>
+        <button class="btn__connect hero-btn">
+          <a href="#contact">Let's connect</a>
+        </button>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
